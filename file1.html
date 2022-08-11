@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Document</title>
+          <link rel="shortcut icon" href="images/logo.jpg">
+          <!-- CSS only -->
+          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+          <!-- JavaScript Bundle with Popper -->
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+          <link rel="stylesheet" href="file1.css">
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+          <link rel="shortcuts" href="https://logosandtypes.com/wp-content/uploads/2021/01/Swiggy.png">
+</head>
+<body>
+  <script src="file1.js"></script>
+          <div class="container-fluid">
+                    <div class="row" id="one">
+                              <div class="col-1">
+                                        <img src="images/logo.jpg" alt="" srcset="" class="w-100" height="70px">
+                              </div>
+                              <div class="col-5">
+                                        <button  id="getpopup" onclick="locate()"><b>Other</b> &nbsp; Curret Location..... <i class="bi bi-chevron-compact-down"></i></button>
+                                        <!-- <button  id="getpopup" onclick="locate()"><a href="" class="text-dark"><b>Other</b> &nbsp; Curret Location..... <i class="bi bi-chevron-compact-down"></i></a></button> -->
+                              </div>
+                              <div class="col-sm-1 offset-1 nav"><a href="search.html" class="text-dark"><b><span><i class="bi bi-search"></i></span> Search</b></a></div>
+                              <div class="col-sm-1 nav"><a href="offers.html" class="text-dark"><b><span><i class="bi bi-percent"></i></span> Offers</b></a></div>
+                              <div class="col-sm-1 nav"><a href="help.html" class="text-dark"><b><span><i class="bi bi-question-circle"></i></span> Help</b></a></div>
+                              <div class="col-sm-1 nav"><button onclick="signin()" id="signin"><span><i class="bi bi-person"></i></span><b>Sign In</b></button></div>
+                              <div class="col-sm-1 nav"><a href="cart.html" class="text-dark"><b><span><i class="bi bi-cart2"></i></span>Cart</b></a></div>
+                    </div><br>
+                    <div class="row" id="two">
+                              <div class="col-3 p-4 py-5 "><a href=""><img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/rng/md/carousel/production/pneknawbadtvceqzwiep" class="_1gDnr" width="260" height="260"></a></div>
+                              <div class="col-3 p-4 py-5"><a href=""><img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/rng/md/carousel/production/zpkkdkmvlj5cuvqbc50t" class="_1gDnr" width="260" height="260"></a></div>
+                              <div class="col-3 p-4 py-5"><a href=""><img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/rng/md/carousel/production/s5ug2key6e2sptaxku5v" class="_1gDnr" width="260" height="260"></a></div>
+                              <div class="col-3 p-4 py-5"><a href=""><img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/rng/md/carousel/production/ifi2lbzxeu1hvsqrsip3" class="_1gDnr" width="260" height="260"></a></div>
+                    </div>
+                    <div class="row my-4" id="three">
+                              <ul>
+                                        <li class="li"><b>1196 restaurants</b></li>
+                                        <li><a href="" class="text-black-50">Relevance</a></li>
+                                        <li><a href="" class="text-black-50">Delivery Time</a></li>
+                                        <li><a href="" class="text-black-50">Rating</a></li>
+                                        <li><a href="" class="text-black-50">Cost: Low To High</a></li>
+                                        <li><a href="" class="text-black-50">Cost: High To Low</a></li>
+                                        <li><button id="filterbtn" onclick="show()">Filter <span><i class="bi bi-filter-square"></i></span></button></li>
+                              </ul>
+                    </div>
+                    <div class="row" id="four">
+                              <div class="col-3">
+                                        <div class="card">
+                                        <img src="https://res.cloudinary.com/swiggy/image/upload/f_auto,q_auto,fl_lossy/bf13s7l8debuqtdpensu" alt="" srcset="" class="w-100 p-3" height="180px">
+                                        <div class="card-body">
+                                                  <div class="title">
+                                                            <b>KFC</b>
+                                                  </div>
+                                                  <div class="card-text">
+                                                            American,Snacks,Biriyani <br><br>
+                                                            <div class="btn btn-warning btn-sm"><i class="bi bi-star"></i><span>3.7</span></div><span class="mx-2"> &nbsp. &nbsp&nbsp; 49MIN</span><span> &nbsp. &nbsp&#8377 400 FOR TWO</span>
+                                                  </div><br>
+                                                  <div class="card-footer">
+                                                           <p class="text-warning"> <i class="bi bi-percent"></i> 40% off | Use SWIGGYIT</p>
+                                                  </div>
+                                                  <div class="card-footer d-none foot" align="center"><b>QUICK VIEW</b></div>
+                                        </div>
+                                        </div>
+                              </div>
+                              <div class="col-3">
+                                        <div class="card" id="card">
+                                        <img src="https://www.tbsnews.net/sites/default/files/styles/big_2/public/images/2021/03/19/biriyani.jpg?itok=oFjhCg5D&timestamp=1616129015" alt="" class="w-100 p-3" height="180px">
+                                        <div class="card-body">
+                                                  <div class="title">
+                                                            <b>Mehfil</b>
+                                                  </div>
+                                                  <div class="card-text">
+                                                            Biriyani,Chinese,Indian,Kebabas,Tandoor,Desserts <br><br>
+                                                            <div class="btn btn-warning btn-sm"><i class="bi bi-star"></i><span>3.8</span></div><span class="mx-2"> &nbsp. &nbsp&nbsp; 49</span><span> &nbsp. &nbsp&#8377 300 FOR TWO</span>
+                                                  </div><br>
+                                                  <div class="card-footer">
+                                                           <p class="text-warning"> <i class="bi bi-percent"></i> 50% off | Use WELCOME50</p>
+                                                  </div>
+                                                  <div class="card-footer d-none foot" align="center"><b>QUICK VIEW</b></div>
+                                        </div>
+                                        </div>
+                              </div>
+                              <div class="col-3">
+                                        <div class="card">
+                                        <img src="https://lh3.googleusercontent.com/6R3HC02OaiJBDmE4foj_961Nv2cCFqFrxGnQJJq2bCrg0UwYtrW3RAvtotBR83OpJc0eSZb6246kIcBHpmDFHLe-zEDb=w512" alt="" srcset="" class="w-100 p-3" height="180px">
+                                        <div class="card-body">
+                                                  <div class="title">
+                                                            <b>Raja Rani Ruchulu</b>
+                                                  </div>
+                                                  <div class="card-text">
+                                                            Biriyani,Indian,Chinese,Kekabas,Halem,North Indian <br><br>
+                                                            <div class="btn btn-warning btn-sm"><i class="bi bi-star"></i><span>3.9</span></div><span class="mx-2"> &nbsp. &nbsp&nbsp; 49</span><span> &nbsp. &nbsp&#8377 300 FOR TWO</span>
+                                                  </div><br>
+                                                  <div class="card-footer">
+                                                           <p class="text-warning"> <i class="bi bi-percent"></i> 50% off | Use WELCOME50</p>
+                                                  </div>
+                                                  <div class="card-footer d-none foot" align="center"><b>QUICK VIEW</b></div>
+                                        </div>
+                                        </div>
+                              </div>
+                              <div class="col-3">
+                                        <div class="card">
+                                        <img src="https://www.nehascookbook.com/wp-content/uploads/2021/06/Rumali-roti-paneer-shaak-WS.jpg" alt="" srcset="" class="w-100 p-3" height="180px">
+                                        <div class="card-body">
+                                                  <div class="title">
+                                                            <b>Paneer Roti</b>
+                                                  </div>
+                                                  <div class="card-text">
+                                                            Hyderabdi,Snacks,Biriyani <br><br>
+                                                            <div class="btn btn-success btn-sm"><i class="bi bi-star"></i><span>4.0</span></div><span class="mx-2"> &nbsp. &nbsp&nbsp; 49</span><span> &nbsp. &nbsp&#8377 300 FOR TWO</span>
+                                                  </div><br>
+                                                  <div class="card-footer">
+                                                           <p class="text-success"> <i class="bi bi-percent"></i> 50% off | Use WELCOME50</p>
+                                                  </div>
+                                                  <div class="card-footer d-none" id="foot" align="center"><b>QUICK VIEW</b></div>
+                                        </div>
+                                        </div>
+                              </div>  
+                    </div><br><br><br>
+                    <div class="row" id="four">
+                      <div class="col-3">
+                        <div class="card">
+                                  <img src="https://www.simplyrecipes.com/thmb/8caxM88NgxZjz-T2aeRW3xjhzBg=/2000x1125/smart/filters:no_upscale()/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2019__09__easy-pepperoni-pizza-lead-3-8f256746d649404baa36a44d271329bc.jpg" alt="" srcset="" class="w-100 p-3" height="180px">
+                                  <div class="card-body">
+                                            <div class="title">
+                                                      <b>Pizza</b>
+                                            </div>
+                                            <div class="card-text">
+                                                      American,Snacks,With Extra Toppings<br><br>
+                                                      <div class="btn btn-warning btn-sm"><i class="bi bi-star"></i><span>4.0</span></div><span class="mx-2"> &nbsp. &nbsp&nbsp; 49</span><span> &nbsp. &nbsp&#8377 300 FOR TWO</span>
+                                            </div><br>
+                                            <div class="card-footer">
+                                                     <p class="text-success"> <i class="bi bi-percent"></i> 50% off | Use WELCOME50</p>
+                                            </div>
+                                            <div class="card-footer d-none" id="foot" align="center"><b>QUICK VIEW</b></div>
+                                  </div>
+                        </div>  
+              </div>
+                    <div class="col-3">
+                              <div class="card">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Ice_cream_with_whipped_cream%2C_chocolate_syrup%2C_and_a_wafer_%28cropped%29.jpg/1200px-Ice_cream_with_whipped_cream%2C_chocolate_syrup%2C_and_a_wafer_%28cropped%29.jpg" alt="" srcset="" class="w-100 p-3" height="180px">
+                                        <div class="card-body">
+                                                  <div class="title">
+                                                            <b>Ice Creams</b>
+                                                  </div>
+                                                  <div class="card-text">
+                                                            American,With Extra Toppings<br><br>
+                                                            <div class="btn btn-primary btn-sm"><i class="bi bi-star"></i><span>4.0</span></div><span class="mx-2"> &nbsp. &nbsp&nbsp; 49</span><span> &nbsp. &nbsp&#8377 300 FOR TWO</span>
+                                                  </div><br>
+                                                  <div class="card-footer">
+                                                          <p class="text-success"> <i class="bi bi-percent"></i> 50% off | Use WELCOME50</p>
+                                                  </div>
+                                                  <div class="card-footer d-none" id="foot" align="center"><b>QUICK VIEW</b></div>
+                                        </div>
+                              </div>
+                    </div>
+                    <div class="col-3">
+                              <div class="card">
+                                        <img src="https://www.thespruceeats.com/thmb/LlR9HScfODtlFcHNdZWXSNHkXcA=/1500x1000/filters:fill(auto,1)/chocolate-milkshake-4587581-hero-1-22c8a039103c413dafd75f4f4c39ddd4.JPG" alt="" srcset="" class="w-100 p-3" height="180px">
+                                        <div class="card-body">
+                                                  <div class="title">
+                                                            <b>Milk Shakes</b>
+                                                  </div>
+                                                  <div class="card-text">
+                                                            American,Snacks,With Extra Toppings<br><br>
+                                                            <div class="btn btn-danger btn-sm"><i class="bi bi-star"></i><span>4.0</span></div><span class="mx-2"> &nbsp. &nbsp&nbsp; 49</span><span> &nbsp. &nbsp&#8377 300 FOR TWO</span>
+                                                  </div><br>
+                                                  <div class="card-footer">
+                                                          <p class="text-success"> <i class="bi bi-percent"></i> 50% off | Use WELCOME50</p>
+                                                  </div>
+                                                  <div class="card-footer d-none" id="foot" align="center"><b>QUICK VIEW</b></div>
+                                        </div>
+                              </div>
+                    </div>
+                    <div class="col-3">
+                              <div class="card">
+                                        <img src="https://assets.cntraveller.in/photos/60ba26c0bfe773a828a47146/4:3/w_1440,h_1080,c_limit/Burgers-Mumbai-Delivery.jpg" alt="" srcset="" class="w-100 p-3" height="180px">
+                                        <div class="card-body">
+                                                  <div class="title">
+                                                            <b>Burger</b>
+                                                  </div>
+                                                  <div class="card-text">
+                                                            American,Snacks,With Extra Cheeze<br><br>
+                                                            <div class="btn btn-secondary btn-sm"><i class="bi bi-star"></i><span>4.0</span></div><span class="mx-2"> &nbsp. &nbsp&nbsp; 49</span><span> &nbsp. &nbsp&#8377 300 FOR TWO</span>
+                                                  </div><br>
+                                                  <div class="card-footer">
+                                                          <p class="text-success"> <i class="bi bi-percent"></i> 50% off | Use WELCOME50</p>
+                                                  </div>
+                                                  <div class="card-footer d-none" id="foot" align="center"><b>QUICK VIEW</b></div>
+                                        </div>
+                              </div>
+                    </div>
+                  </div>
+                </div><br><br>
+                <div class="row" id="four">
+                  <div class="col-3">
+                    <div class="card">
+                              <img src="https://imgmedia.lbb.in/media/2019/05/5ce55e127c6b977cc01e8f48_1558535698418.jpg" alt="" srcset="" class="w-100 p-3" height="180px">
+                              <div class="card-body">
+                                        <div class="title">
+                                                  <b>Andhra Special</b>
+                                        </div>
+                                        <div class="card-text">
+                                                  Snacks<br><br>
+                                                  <div class="btn btn-warning btn-sm"><i class="bi bi-star"></i><span>4.0</span></div><span class="mx-2"> &nbsp. &nbsp&nbsp; 49</span><span> &nbsp. &nbsp&#8377 300 FOR TWO</span>
+                                        </div><br>
+                                        <div class="card-footer">
+                                                 <p class="text-success"> <i class="bi bi-percent"></i> 50% off | Use WELCOME50</p>
+                                        </div>
+                                        <div class="card-footer d-none" id="foot" align="center"><b>QUICK VIEW</b></div>
+                              </div>
+                    </div>  
+          </div>
+          <div class="col-3">
+                    <div class="card">
+                              <img src="https://www.tiffinboxfood.com/wp-content/uploads/2020/03/chicken-momo-1.jpg" alt="" srcset="" class="w-100 p-3" height="180px">
+                              <div class="card-body">
+                                        <div class="title">
+                                                  <b>Momos</b>
+                                        </div>
+                                        <div class="card-text">
+                                                  American,North Indian<br><br>
+                                                  <div class="btn btn-primary btn-sm"><i class="bi bi-star"></i><span>4.0</span></div><span class="mx-2"> &nbsp. &nbsp&nbsp; 49</span><span> &nbsp. &nbsp&#8377 300 FOR TWO</span>
+                                        </div><br>
+                                        <div class="card-footer">
+                                                 <p class="text-success"> <i class="bi bi-percent"></i> 50% off | Use WELCOME50</p>
+                                        </div>
+                                        <div class="card-footer d-none" id="foot" align="center"><b>QUICK VIEW</b></div>
+                              </div>
+                    </div>
+          </div>
+          <div class="col-3">
+                    <div class="card">
+                              <img src="https://images.herzindagi.info/image/2020/Jun/chocolate-parle-g-ice-cream.jpg" alt="" srcset="" class="w-100 p-3" height="180px">
+                              <div class="card-body">
+                                        <div class="title">
+                                                  <b>Ice Creames</b>
+                                        </div>
+                                        <div class="card-text">
+                                                  American,Indian,With Extra Toppings<br><br>
+                                                  <div class="btn btn-danger btn-sm"><i class="bi bi-star"></i><span>4.0</span></div><span class="mx-2"> &nbsp. &nbsp&nbsp; 49</span><span> &nbsp. &nbsp&#8377 300 FOR TWO</span>
+                                        </div><br>
+                                        <div class="card-footer">
+                                                 <p class="text-warning"> <i class="bi bi-percent"></i> 50% off | Use WELCOME50</p>
+                                        </div>
+                                        <div class="card-footer d-none" id="foot" align="center"><b>QUICK VIEW</b></div>
+                              </div>
+                    </div>
+          </div>
+          <div class="col-3">
+                    <div class="card">
+                              <img src="https://c.recipeland.com/images/r/22063/e1f83d693f535c6923bf_1024.jpg" alt="" srcset="" class="w-100 p-3" height="180px">
+                              <div class="card-body">
+                                        <div class="title">
+                                                  <b>Sweets</b>
+                                        </div>
+                                        <div class="card-text">
+                                                  American,Indian,South Indian<br><br>
+                                                  <div class="btn btn-primary btn-sm"><i class="bi bi-star"></i><span>4.0</span></div><span class="mx-2"> &nbsp. &nbsp&nbsp; 49</span><span> &nbsp. &nbsp&#8377 300 FOR TWO</span>
+                                        </div><br>
+                                        <div class="card-footer">
+                                                 <p class="text-danger"> <i class="bi bi-percent"></i> 50% off | Use WELCOME50</p>
+                                        </div>
+                                        <div class="card-footer d-none" id="foot" align="center"><b>QUICK VIEW</b></div>
+                              </div>
+                    </div>
+          </div>
+                </div>
+                              
+          </div>
+          
+           <!-- Location TopupBox -->
+
+           <div class="container-fluid" id="main_cont">
+            <div class="row">
+              <div class="col-4" id="topup">
+                <button onclick="locate()" id="close"><h2 class="p-3 px-5" id="exit">&times;</h2></button>
+                <center><input type="text" name="" id="inp1" placeholder="Search for area, street name...."></center><br><br>
+                <center><input type="text" name="" id="inp2"></center>
+                <span class="loc"><i class="bi bi-geo-alt"></i>&nbsp;&nbsp;<b class="hov">Get Current Location</b><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Using GPS</span>
+              </div>
+              <div class="col-8">
+
+              </div>
+            </div>
+           </div>
+           
+           <!-- login_page -->
+
+           <div class="container-fluid" id="sign_popup">
+            <div class="row">
+                <div class="col-8">
+
+                </div>
+                  <div class="col-4 p-5" id="topup1">
+                      <button id="close" onclick="signin()"><h3 class="close">&times;</h3></button>
+                      <h2><b>Login</b></h2>    
+                      <h4>or <a href="" class="text-warning">create an account</a></h4><br>
+                      <input type="tel" name="" id="tel" placeholder="Phone number"><br><br>
+                      <input type="submit" value="Login" class="btn btn-warning warning" onclick="validate()"><br><br>
+                      <h6>By clicking on Login, I accept the <b><br><br> Terms & Conditions & Privacy Policy</b></h6>
+                  </div>
+                </div>
+              </div>
+           </div>
+
+
+           <!-- =================================filters========================================== -->
+
+
+          <div id="six">
+            <div class="container">
+              <div class="row">
+                <div class="col-12">
+                  <h1><button onclick="show()" id="closebtn"><span class="px-4"> &times;&nbsp <b>Filters</b></span></button></h1><br>
+                 </div>
+              </div>
+              <div class="row" id="scroll">
+                  <div class="col-6">
+                    <h3 class="px-4"><b>cusines</b></h3>
+                    <ol>
+                      <li><input type="checkbox" name="" id="">&nbsp;&nbsp;Afgani</li>
+                      <li><input type="checkbox" name="" id="">&nbsp;&nbsp;Andhara</li>
+                      <li><input type="checkbox" name="" id="">&nbsp;&nbsp;Asian</li>
+                      <li><input type="checkbox" name="" id="">&nbsp;&nbsp;Barbecue</li>
+                      <li><input type="checkbox" name="" id="">&nbsp;&nbsp;Beverages</li>
+                      <li><input type="checkbox" name="" id="">&nbsp;&nbsp;British</li>
+                      <li><input type="checkbox" name="" id="">&nbsp;&nbsp;Cafe</li>
+                      <li><input type="checkbox" name="" id="">&nbsp;&nbsp;Chinese</li>
+                      <li><input type="checkbox" name="" id="">&nbsp;&nbsp;Continental</li>
+                      <li><input type="checkbox" name="" id="">&nbsp;&nbsp;European</li>
+                      <li><input type="checkbox" name="" id="">&nbsp;&nbsp;Grill</li>
+                      <li><input type="checkbox" name="" id="">&nbsp;&nbsp;Seafood</li>
+                      <li><input type="checkbox" name="" id="">&nbsp;&nbsp;Rayalasemma</li>
+                      <li><input type="checkbox" name="" id="">&nbsp;&nbsp;Street food</li>
+                      <li><input type="checkbox" name="" id="">&nbsp;&nbsp;Tandoor</li>
+                      <li><input type="checkbox" name="" id="">&nbsp;&nbsp;Thai</li>
+                    </ol>
+                  </div>
+                  <div class="col-6">
+                    <ul class="py-3"><br>
+                      <li><input type="checkbox" name="" id="">&nbsp;&nbsp;American</li>
+                      <li><input type="checkbox" name="" id="">&nbsp;&nbsp;Arabian</li>
+                      <li><input type="checkbox" name="" id="">&nbsp;&nbsp;Bakery</li>
+                      <li><input type="checkbox" name="" id="">&nbsp;&nbsp;Bengali</li>
+                      <li><input type="checkbox" name="" id="">&nbsp;&nbsp;Biriyani</li>
+                      <li><input type="checkbox" name="" id="">&nbsp;&nbsp;Burgers</li>
+                      <li><input type="checkbox" name="" id="">&nbsp;&nbsp;Chaat</li>
+                      <li><input type="checkbox" name="" id="">&nbsp;&nbsp;Combo</li>
+                      <li><input type="checkbox" name="" id="">&nbsp;&nbsp;Desserts</li>
+                      <li><input type="checkbox" name="" id="">&nbsp;&nbsp;Fast Food</li>
+                      <li><input type="checkbox" name="" id="">&nbsp;&nbsp;Haleem</li>
+                      <li><input type="checkbox" name="" id="">&nbsp;&nbsp;Telangana</li>
+                      <li><input type="checkbox" name="" id="">&nbsp;&nbsp;TelanganaSpicy</li>
+                      <li><input type="checkbox" name="" id="">&nbsp;&nbsp;Sweets</li>
+                      <li><input type="checkbox" name="" id="">&nbsp;&nbsp;Tibetian</li>
+                      <li><input type="checkbox" name="" id="">&nbsp;&nbsp;Waffle</li>
+                    </ul>
+                  </div>
+              </div><br>
+              <div class="row">
+                <div class="col-8">
+                  <ul>
+                    <li><b>Show Restaurants With</b></li>
+                    <li><input type="checkbox" name="" id="">&nbsp;&nbsp;Pure Veg</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 px-5">
+                  <div class="btn btn-light text-black-50">Clear</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <div class="btn btn-warning class text-white">Show Restaurants</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- <script src="jquery-3.6.0.js"></script>
+          <script>
+                  $(document).ready(function(){
+                    $("#getpopup").click(function(){
+                              $("#topup").show(1000)
+                    })
+                    $("#exit").click(function(){
+                              $("#topup").hide()
+                    })
+                    $("#btn").click(function(){
+                              $(this).hide()
+                    })
+                    $("#closebtn").click(function(){
+                              $("#btn").show()
+                    })
+                  })  
+          </script> -->
+            <!-- ===============================Footer section==========================================/ -->
+          <div class="container-fluid" id="five">
+            <div class="row">
+                <div class="col-2">
+                  <ul class="my-3">
+                    <li><b class="text-secondary">COMPANY</b></li><br>
+                    <li><a href="">About us</a></li>
+                    <li><a href="">Team</a></li>
+                    <li><a href="">Careers</a></li>
+                    <li><a href="">Swiggy Blog</a></li>
+                    <li><a href="">BugBounty</a></li>
+                    <li><a href="">Swiggy One</a></li>
+                    <li><a href="">Swiggy Coporate</a></li>
+                    <li><a href="">Swiggy Instamart</a></li>
+                  </ul>
+                </div>
+                <div class="col-3">
+                  <ul class="my-3">
+                    <li><b class="text-secondary">CONTACT</b></li><br>
+                    <li><a href="">Help & Support</a></li>
+                    <li><a href="">Partner with us</a></li>
+                    <li><a href="">Ride with us</a></li>
+                  </ul>
+                </div>
+                <div class="col-4">
+                  <ul class="my-3">
+                    <li><b class="text-secondary">LEGAL</b></li><br>
+                    <li><a href="">Terms & Conditions</a></li>
+                    <li><a href="">Refund & Cancellation</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a href="">Cookie Policy</a></li>
+                    <li><a href="">Offer Terms</a></li>
+                    <li><a href="">Phishing & Fraud</a></li>
+                    <li><a href="">Legal
+                      Corporate – Swiggy Money Codes Terms and Conditions</a></li>
+                    <li><a href="">Legal
+                      Corporate - Swiggy Discount Voucher Terms and Conditions</a></li>
+                  </ul>
+                </div>
+                <div class="col-3">
+                  <div class="row">
+                    <a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Download_on_the_App_Store_Badge.svg/640px-Download_on_the_App_Store_Badge.svg.png" alt="" srcset="" class="w-100 py-5 px-5"></a>
+                    <a href=""><img src="https://mylapels.com/wp-content/uploads/2019/02/global-playstore.png" alt="" srcset="" class="w-100 px-5"></a>
+                  </div>
+                </div>
+            </div>
+          </div>
+        
+          <div class="container-fluid" id="five">
+            <div class="row py-3">
+              <h3><b class="text-secondary px-4">WE DELIVERY TO</b></h3>
+              <div class="col-3 py-5">
+                  <ul>
+                    <li><a href="">abohar</a></li>     
+                    <li><a href="">adilabad</a></li>
+                    <li><a href="">adoni</a></li>
+                    <li><a href="">agartala</a></li>
+                    <li><a href="">agra</a></li>
+                    <li><a href="">ahmedabad</a></li>
+                    <li><a href="">ahmednagar</a></li>
+                    <li><a href="">aizawl</a></li>
+                    <li><a href="">ajmer</a></li>
+                    <li><a href="">amritsar</a></li>
+                    <li><a href="">Hyderabad</a></li>
+                    <li><a href="">Bangalore</a></li>
+                    <li><a href="">Mahabubnagar</a></li>
+                    <li><a href="">Chennai</a></li>
+                    <li><a href="">Kochi</a></li>
+                    <li><a href="">Pune</a></li>
+                    <li><a href="">Kolkata</a></li>
+                    <li><a href="">Kollam</a></li>
+                    <li><a href="">Koppal</a></li>
+                    <li><a href="">Dharmashal</a></li>
+                  </ul>
+              </div>
+              <div class="col-3 py-5">
+                <ul>
+                  <li><a href="">darbhanga</a></li>
+                  <li><a href="">darjeeling</a></li>
+                  <li><a href="">deoghar</a></li>
+                  <li><a href="">dewas</a></li>
+                  <li><a href="">delhi</a></li>
+                  <li><a href="">dehri</a></li>
+                  <li><a href="">dehradun</a></li>
+                  <li><a href="">davanagere</a></li>
+                  <li><a href="">dausa</a></li>
+                  <li><a href="">daund</a></li>
+                  <li><a href="">khopoli</a></li>
+                  <li><a href="">kolhapur</a></li>
+                  <li><a href="">kolar</a></li>
+                  <li><a href="">kohima</a></li>
+                  <li><a href="">kodaikanal</a></li>
+                  <li><a href="">kochi</a></li>
+                  <li><a href="">kishanganj</a></li>
+                  <li><a href="">kishangarh</a></li>
+                  <li><a href="">kolkata</a></li>
+                  <li><a href="">kollam</a></li>
+                </ul>
+              </div>
+              <div class="col-3 py-5">
+                <ul>
+                  <li><a href="">khopoli</a></li>
+                  <li><a href="">kolhapur</a></li>
+                  <li><a href="">kolar</a></li>
+                  <li><a href="">kohima</a></li>
+                  <li><a href="">kodaikanal</a></li>
+                  <li><a href="">kochi</a></li>
+                  <li><a href="">kishanganj</a></li>
+                  <li><a href="">kishangarh</a></li>
+                  <li><a href="">kolkata</a></li>
+                  <li><a href="">kollam</a></li>
+                  <li><a href="">darbhanga</a></li>
+                  <li><a href="">darjeeling</a></li>
+                  <li><a href="">deoghar</a></li>
+                  <li><a href="">dewas</a></li>
+                  <li><a href="">delhi</a></li>
+                  <li><a href="">dehri</a></li>
+                  <li><a href="">dehradun</a></li>
+                  <li><a href="">davanagere</a></li>
+                  <li><a href="">dausa</a></li>
+                  <li><a href="">daund</a></li>
+                </ul>
+              </div>
+              <div class="col-3 py-5">
+                <ul>
+                    <li><a href="">Hyderabad</a></li>
+                    <li><a href="">Bangalore</a></li>
+                    <li><a href="">Mahabubnagar</a></li>
+                    <li><a href="">Chennai</a></li>
+                    <li><a href="">Kochi</a></li>
+                    <li><a href="">Pune</a></li>
+                    <li><a href="">Kolkata</a></li>
+                    <li><a href="">Kollam</a></li>
+                    <li><a href="">Koppal</a></li>
+                    <li><a href="">Dharmashal</a></li>
+                    <li><a href="">abohar</a></li>     
+                    <li><a href="">adilabad</a></li>
+                    <li><a href="">adoni</a></li>
+                    <li><a href="">agartala</a></li>
+                    <li><a href="">agra</a></li>
+                    <li><a href="">ahmedabad</a></li>
+                    <li><a href="">ahmednagar</a></li>
+                    <li><a href="">aizawl</a></li>
+                    <li><a href="">ajmer</a></li>
+                    <li><a href="">amritsar</a></li>
+                    <li><a href="">Hyderabad</a></li>
+                </ul>
+              </div>
+              <h1 id="line"></h1><br>
+            </div>
+          </div>
+          <div class="container-fluid py-3" id="social">
+            <div class="row">
+              <div class="col-2">
+                <img class="" alt="" src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_284/Logo_f5xzza" width="142">
+              </div>
+              <div class="col-2 offset-3 py-2">
+                <div class="text-light">© 2022 Swiggy</div>
+              </div>
+              <div class="col-1 offset-1"><a href="" class="p-3"><i class="bi bi-facebook" id="media"></i></a></div>
+              <div class="col-1"><a href="" class="p-3"><i class="bi bi-instagram" id="media"></i></a></div>
+              <div class="col-1"><a href="" class="p-3"><i class="bi bi-twitter" id="media"></i></a></div>
+              <div class="col-1"><a href=""><img src="https://i.pinimg.com/originals/d3/d1/75/d3d175e560ae133f1ed5cd4ec173751a.png" alt="" srcset="" class="w-100" height="50x" width="50px"></a></div>
+            </div>
+          </div>
+
+
+
+          
+          
+<!-- <script>
+  let locationpopup = document.getElementById('popup')
+  let getpopup = document.getElementById('getpopup')
+
+  function  show(){
+        document.getElementById('getpopup')
+        .classList.toggle("active")
+  }
+</script> -->
+
+
+
+<!-- -------------------------------Delivery Time--------------------------------------------------- -->
+
+<!-- <div class="row" id="four">
+  <div class="col-3">
+    <div class="card">
+              <img src="https://img.onmanorama.com/content/dam/mm/en/food/in-season/Ramzan/Images/hyderabadi-dum-biryani.jpg" alt="" srcset="" class="w-100 p-3" height="180px">
+              <div class="card-body">
+                        <div class="title">
+                                  <b>Chaitanya Food Court</b>
+                        </div>
+                        <div class="card-text">
+                                 Biriyani,Chinese,Andhra,North Indian<br><br>
+                                  <div class="btn btn-warning btn-sm"><i class="bi bi-star"></i><span>3.0</span></div><span class="mx-2"> &nbsp. &nbsp&nbsp; 49</span><span> &nbsp. &nbsp&#8377 600 FOR TWO</span>
+                        </div><br>
+                        <div class="card-footer">
+                                 <p class="text-success"> <i class="bi bi-percent"></i> 50% off | Use WELCOME50</p>
+                        </div>
+                        <div class="card-footer d-none" id="foot" align="center"><b>QUICK VIEW</b></div>
+              </div>
+    </div>  
+</div>
+<div class="col-3">
+    <div class="card">
+              <img src="https://imagesvc.meredithcorp.io/v3/mm/image?q=60&c=sc&poi=face&w=2000&h=1000&url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F43%2F2022%2F06%2F19%2F453291-five-ingredient-ice-cream-Alberta-Rose-4x3-1.jpg" alt="" srcset="" class="w-100 p-3" height="180px">
+              <div class="card-body">
+                        <div class="title">
+                                  <b>Nic Ice Creams</b>
+                        </div>
+                        <div class="card-text">
+                                  Ice Creams, Desserts<br><br>
+                                  <div class="btn btn-primary btn-sm"><i class="bi bi-star"></i><span>2.5</span></div><span class="mx-2"> &nbsp. &nbsp&nbsp; 29</span><span> &nbsp. &nbsp&#8377 120 FOR TWO</span>
+                        </div><br>
+                        <div class="card-footer">
+                                 <p class="text-success"> <i class="bi bi-percent"></i> 50% off | Use WELCOME50</p>
+                        </div>
+                        <div class="card-footer d-none" id="foot" align="center"><b>QUICK VIEW</b></div>
+              </div>
+    </div>
+</div>
+<div class="col-3">
+    <div class="card">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi-K0v_TD8EuRLWuWyxx6_AGCgpVDmDlPAhQ&usqp=CAU" alt="" srcset="" class="w-100 p-3" height="180px">
+              <div class="card-body">
+                        <div class="title">
+                                  <b>Grameen Kulfi </b>
+                        </div>
+                        <div class="card-text">
+                          Ice Creams, Desserts<br><br>
+                                  <div class="btn btn-danger btn-sm"><i class="bi bi-star"></i><span>3.0</span></div><span class="mx-2"> &nbsp. &nbsp&nbsp; 30</span><span> &nbsp. &nbsp&#8377 120 FOR TWO</span>
+                        </div><br>
+                        <div class="card-footer">
+                                 <p class="text-warning"> <i class="bi bi-percent"></i> 50% off | Use WELCOME50</p>
+                        </div>
+                        <div class="card-footer d-none" id="foot" align="center"><b>QUICK VIEW</b></div>
+              </div>
+    </div>
+</div>
+<div class="col-3">
+    <div class="card">
+              <img src="https://res.cloudinary.com/swiggy/image/upload/f_auto,q_auto,fl_lossy/rnctleksxrgvd5alazm5" alt="" srcset="" class="w-100 p-3" height="180px">
+              <div class="card-body">
+                        <div class="title">
+                                  <b>Sweets</b>
+                        </div>
+                        <div class="card-text">
+                                  American,Indian,South Indian<br><br>
+                                  <div class="btn btn-primary btn-sm"><i class="bi bi-star"></i><span>3.2</span></div><span class="mx-2"> &nbsp. &nbsp&nbsp; 40</span><span> &nbsp. &nbsp&#8377 250 FOR TWO</span>
+                        </div><br>
+                        <div class="card-footer">
+                                 <p class="text-danger"> <i class="bi bi-percent"></i> 50% off | Use WELCOME50</p>
+                        </div>
+                        <div class="card-footer d-none" id="foot" align="center"><b>QUICK VIEW</b></div>
+              </div>
+    </div>
+</div>
+</div>
+              
+</div> -->
+
+<!-- --------------------------------------------------------------------------------------------->
+
+
+<!-- <div class="row" id="four">
+  <div class="col-3">
+    <div class="card">
+              <img src="https://primemomclub.com/wp-content/uploads/2020/11/3-ideas-to-jazz-up-your-regular-pinoy-fruit-salad-recipe.jpg" alt="" srcset="" class="w-100 p-3" height="180px">
+              <div class="card-body">
+                        <div class="title">
+                                  <b>Fruitfull</b>
+                        </div>
+                        <div class="card-text">
+                                 Biriyani,Chinese,Andhra,North Indian<br><br>
+                                  <div class="btn btn-warning btn-sm"><i class="bi bi-star"></i><span>4.0</span></div><span class="mx-2"> &nbsp. &nbsp&nbsp; 40</span><span> &nbsp. &nbsp&#8377 600 FOR TWO</span>
+                        </div><br>
+                        <div class="card-footer">
+                                 <p class="text-success"> <i class="bi bi-percent"></i> 50% off | Use WELCOME50</p>
+                        </div>
+                        <div class="card-footer d-none" id="foot" align="center"><b>QUICK VIEW</b></div>
+              </div>
+    </div>  
+</div>
+<div class="col-3">
+    <div class="card">
+              <img src="https://imagesvc.meredithcorp.io/v3/mm/image?q=60&c=sc&poi=face&w=2000&h=1000&url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F43%2F2022%2F06%2F19%2F453291-five-ingredient-ice-cream-Alberta-Rose-4x3-1.jpg" alt="" srcset="" class="w-100 p-3" height="180px">
+              <div class="card-body">
+                        <div class="title">
+                                  <b>Nic Ice Creams</b>
+                        </div>
+                        <div class="card-text">
+                                  Healthy Food, Salads,Desserts<br><br>
+                                  <div class="btn btn-primary btn-sm"><i class="bi bi-star"></i><span>4.0</span></div><span class="mx-2"> &nbsp. &nbsp&nbsp; 4</span><span> &nbsp. &nbsp&#8377 150 FOR TWO</span>
+                        </div><br>
+                        <div class="card-footer">
+                                 <p class="text-success"> <i class="bi bi-percent"></i> 50% off | Use WELCOME50</p>
+                        </div>
+                        <div class="card-footer d-none" id="foot" align="center"><b>QUICK VIEW</b></div>
+              </div>
+    </div>
+</div>
+<div class="col-3">
+    <div class="card">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi-K0v_TD8EuRLWuWyxx6_AGCgpVDmDlPAhQ&usqp=CAU" alt="" srcset="" class="w-100 p-3" height="180px">
+              <div class="card-body">
+                        <div class="title">
+                                  <b>Best Takeaway</b>
+                        </div>
+                        <div class="card-text">
+                          North Indian, South Indian<br><br>
+                                  <div class="btn btn-danger btn-sm"><i class="bi bi-star"></i><span>2.1</span></div><span class="mx-2"> &nbsp. &nbsp&nbsp; 32</span><span> &nbsp. &nbsp&#8377 200 FOR TWO</span>
+                        </div><br>
+                        <div class="card-footer">
+                                 <p class="text-warning"> <i class="bi bi-percent"></i> 50% off | Use WELCOME50</p>
+                        </div>
+                        <div class="card-footer d-none" id="foot" align="center"><b>QUICK VIEW</b></div>
+              </div>
+    </div>
+</div>
+<div class="col-3">
+    <div class="card">
+              <img src="https://leitesculinaria.com/wp-content/uploads/2021/02/batter-fried-chicken-fp.jpg" alt="" srcset="" class="w-100 p-3" height="180px">
+              <div class="card-body">
+                        <div class="title">
+                                  <b>Hotel Abhilash</b>
+                        </div>
+                        <div class="card-text">
+                                  South Indian,Biriyani<br><br>
+                                  <div class="btn btn-primary btn-sm"><i class="bi bi-star"></i><span>2.5</span></div><span class="mx-2"> &nbsp. &nbsp&nbsp; 33</span><span> &nbsp. &nbsp&#8377 300 FOR TWO</span>
+                        </div><br>
+                        <div class="card-footer">
+                                 <p class="text-danger"> <i class="bi bi-percent"></i> 50% off | Use WELCOME50</p>
+                        </div>
+                        <div class="card-footer d-none" id="foot" align="center"><b>QUICK VIEW</b></div>
+              </div>
+    </div>
+</div>
+</div>
+              
+</div> -->
+
+</body>
+</html>

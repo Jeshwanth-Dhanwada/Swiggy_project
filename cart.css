@@ -1,0 +1,215 @@
+
+                    #one{
+                              border: 2px solid red;
+                              border: hidden;
+                              background-color: whitesmoke;
+                              width: 100%;
+                              height: 80px;  
+                              position: fixed;
+                    }
+                    #one .col-5{
+                              line-height: 78px;
+                    }
+                    #one .nav{
+                              line-height: 70px;
+                    }
+                    #one .col-1:hover{
+                              color: orange;
+                    }
+                    #one a{
+                              text-decoration: none;
+                    }
+                    #one #getpopup{
+                              border: hidden;
+                              background-color: whitesmoke;
+                    }
+                    #one #signin{
+                              border: hidden;
+                              background-color: whitesmoke;
+                    }
+
+
+
+
+                    #two{
+                              border: 2px solid red;
+                              border: hidden;
+                              margin-top: 40px;
+                              width: 100%;
+                              height: 508px;
+                    }
+                    #two .cart_tag{
+                              /* padding-left: 75px; */
+                              text-align: center;
+                    }
+
+                    #two .cart_tag #near_me_restaurant{
+                              border: hidden;
+                              background-color: orangered;
+                              color: white;
+                              height: 40px;
+                              font-weight: 700;
+                    }
+
+
+
+                    #three{
+                              background-color: whitesmoke;
+                              width: 100%;
+                              /* height: 950px; */
+                              /* overflow: scroll; */
+                    }
+                    #three #btn{
+                              border: 2px solid rgb(21, 162, 21);
+                              background-color: white;
+                              color: rgb(21, 162, 21);
+                              width: 150px;
+                              height: 55px;
+                              padding: 2px;
+                              text-align: center;
+                    }
+                    #three #btn1{
+                              border: 2px solid rgb(21, 162, 21);
+                              background-color: rgb(24, 172, 24);
+                              color: white;
+                              width: 150px;
+                              height: 55px;
+                              padding: 2px;
+                              text-align: center;
+                    }
+
+
+
+                    #three #inp{
+                              border: 2px solid red;
+                              width: 720px;
+                              height: 100px;
+                              background-color: white;
+                              font-size: large;
+                              font-weight: 600;
+                              border: hidden;
+                              padding-left: 40px;
+                              margin-left: -10px;
+                    }
+
+                    #login{
+                              border: 2px solid red;
+                              border: hidden;
+                              margin-top: 30px;
+                              background-color: whitesmoke;
+                              padding-left: 45px;
+                              position: absolute;
+                              top: 970px;
+                              display: none;
+                              /* text-align: center; */
+                    }
+
+                    #login.active{
+                              display: block;
+                    }
+                    #three.active{
+                              height: 400px;
+                    }
+
+                    #three #login a{
+                              text-decoration: none;
+                    }
+                    #three #login input{
+                              width: 313px;
+                              height: 80px;
+                              border: 1px solid gray;
+                              background-color: whitesmoke;
+                              padding-left: 30px;
+                    }
+                    #three #login .btn11{
+                              width: 313px;
+                              height: 60px;
+                              border: hidden;
+                              background-color: rgb(17, 177, 17);
+                    }
+                    #three .login p{
+                              font-size: 9px;
+                              font-weight: bold;
+                    }
+                    #three #login #btn11{
+                              border: none;
+                              background-color: white;
+                              color: orange;
+                    }
+                    #three .log{
+                              border: none;
+                              background-color: whitesmoke;
+                    }
+
+
+
+                    /* -----------------------------signup_container----------------------------- */
+                    #signup_cont{
+                              border: 1px solid red;
+                              border: hidden;
+                              background-color: whitesmoke;
+                              padding: 40px;
+                              display: none;
+                              position: relative;
+                              top: -90px;
+                    }
+
+                    #signup_cont.show{
+                              display: block;
+                    }
+                    #signup_cont .log{
+                              text-decoration: none;
+                              color: orange;
+                    }
+                    #signup_cont #inp1{
+                              width: 313px;
+                              height: 70px;
+                              padding-left: 20px;
+                              font-size: large;
+                    }
+                    #signup_cont #inp1:hover{
+
+                              font-size: small;
+                              transition: .2s all;
+                              padding-top: 0px;
+                    }
+                    
+                    #continue{
+                              width: 313px;
+                              height: 50px;
+                              border: hidden;
+                              background-color: rgb(26, 161, 26);
+                              color: white;
+                    }
+                    #signup_cont p{
+                              font-size: 10px;
+                    }
+
+
+                    /* ----------------------------- */
+                    #five{
+                              background-color: black;
+                    }
+                    #five li{
+                              list-style-type: none;
+                    
+                    }
+                    #five a{
+                              text-decoration: none;
+                              color: white;;
+                    }
+
+
+                    #line{
+                              border-bottom: 1px solid gray;
+                    }
+                    #social{
+                              height: 100px;
+                              background-color: black;
+                    }
+                    #media:hover{
+                              transform: scale(1.2);
+                    }
+                    #media{
+                              font-size:xx-large;
+                    }

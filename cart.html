@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Document</title>
+          <link rel="shortcut icon" href="images/logo.jpg">
+          <!-- CSS only -->
+          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+          <!-- JavaScript Bundle with Popper -->
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+          <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+          <div class="container-fluid">
+                    <div class="row" id="one">
+                              <div class="col-1">
+                                        <img src="images/logo.jpg" alt="" srcset="" class="w-100" height="70px">
+                              </div>
+                              <div class="col-5">
+                                        <button  id="getpopup" onclick="locate()"><b>SECURE CHECKOUT</b> <i class="bi bi-chevron-compact-down"></i></button>
+                              </div>
+                              <div class="col-1 offset-3 nav"><a href="file1.html" class="text-dark"><b>Home</b></a></div>
+                              <div class="col-1 nav"><a href="help.html" class="text-dark"><b><span><i class="bi bi-question-circle"></i></span> Help</b></a></div>
+                              <div class="col-1 nav"><a href="" class="text-dark"><b><span><i class="bi bi-cart2"></i></span>Cart</b></a></div>
+                    </div><br>
+          </div>
+          <div class="container-fluid" id="two">
+                    <div class="row ">
+                              <div class="col-6 offset-3">
+                                        <img src="https://media.istockphoto.com/vectors/empty-shopping-bag-icon-cute-disappointed-shopping-bag-flat-thin-line-vector-id841884438?k=20&m=841884438&s=612x612&w=0&h=yi6txQa52uAXEaKRLuijrmzYAT8GQrrv8NhHSD7lMOE=" alt="" srcset="" class="w-100" width="300px" height="300px">
+                                        <div class="cart_tag">
+                                                  <b class="px-5">Your cart is empty</b><br><br>
+                                                  <p>You can go to home page to view more restaurants</p><br>
+                                                  <button id="near_me_restaurant" class="mx-5">SEE RESTAURANTS NEAR YOU</button>
+                                        </div>
+                              </div>
+                    </div>
+          </div>
+          <div class="container-fluid" id="three">
+                    <div class="row">
+                              <div class="col-8">
+                                        <div class="row m-5">
+                                                  <div class="col-12 p-5 bg-white">
+                                                            <h4><b>Our systems are acting up</b></h4>
+                                                            <p>We are experiencing temporary technical difficulties</p>
+                                                            <div class="btn btn-warning"><b>CLEAR CART</b></div>
+                                                  </div>
+                                                  
+                                                  <div class="col-12 p-5 my-5 bg-white">
+                                                            <h4><b>Account</b></h4>
+                                                            <p>To place your order now, log in to your existing account or sign up.</p>
+
+                                                            <button id="btn" onclick="myFunction()">Have an account ?<br><b class="px-4">_LOG IN </b></p></button>&nbsp;&nbsp
+                                                            <button id="btn1" onclick="show()">New to swiggy ? <br> <b>SIGN UP</b></button>
+                                                            <div>    
+                                                    </div><br>
+                                                    <div class="col-12" id="signup_cont">
+                                                      Sign up or <button class="log" onclick="myFunction()">login to your account</button><br><br>
+                                                       <form action="">
+                                                         <input type="tel" name="" id="inp1" placeholder="Phone number"><br>
+                                                         <input type="text" name="" id="inp1" placeholder="Name"><br>
+                                                         <input type="email" name="" id="inp1" placeholder="Email"><br>
+                                                         <input type="password" name="" id="inp1" placeholder="Password"> 
+                                                       </form><br>
+                                                       <a href="">Have a referral code?</a><br><br>
+
+                                                       <button id="continue"><b>Continue</b></button><br><br>
+                                                       <p>
+                                                         By creating an account, I accept the Terms & Conditions & <br>
+                                                         Privacy   Policy 
+                                                       </p>
+                                                 </div>
+                                               </div>
+                                                  
+                                                  <div class="col-7" id="login">
+                                                    <h6>Enter login details or <button onclick="show()" id="btn11" class="p-0">create an account</button></h6><br>
+                                                    <input type="tel" name="" id="" placeholder="phone number"><br><br>
+                                                    <button class="text-white btn11">Login</button><br><br>
+                                                    <p>By clicking on Login, I accept the <a href="">Terms & Conditions & Privacy Policy</a></p>
+                                                  </div>
+                                                  
+                                                  <div class="col-12">
+                                                            <input type="text" name="" id="inp" placeholder="Delivery address">
+                                                  </div>
+                                                  <div class="col-12 my-5">
+                                                            <input type="text" name="" id="inp" placeholder="Payment">
+                                                  </div>
+
+                                        </div>
+                              </div>
+                              <div class="col-4 p-4">
+                                        <img src="https://media.istockphoto.com/vectors/empty-shopping-bag-icon-cute-disappointed-shopping-bag-flat-thin-line-vector-id841884438?k=20&m=841884438&s=612x612&w=0&h=yi6txQa52uAXEaKRLuijrmzYAT8GQrrv8NhHSD7lMOE=" alt="" srcset="" class="w-100">
+                                        <p class="p-4">Good food is always cooking! <br> Go ahead, order some yummy items <br> from the menu.</p>
+                              </div>
+                    </div>
+          </div>
+          <div class="container-fluid" id="five">
+                    <div class="row">
+                        <div class="col-2">
+                          <ul class="my-3">
+                            <li><b class="text-secondary">COMPANY</b></li><br>
+                            <li><a href="">About us</a></li>
+                            <li><a href="">Team</a></li>
+                            <li><a href="">Careers</a></li>
+                            <li><a href="">Swiggy Blog</a></li>
+                            <li><a href="">BugBounty</a></li>
+                            <li><a href="">Swiggy One</a></li>
+                            <li><a href="">Swiggy Coporate</a></li>
+                            <li><a href="">Swiggy Instamart</a></li>
+                          </ul>
+                        </div>
+                        <div class="col-3">
+                          <ul class="my-3">
+                            <li><b class="text-secondary">CONTACT</b></li><br>
+                            <li><a href="">Help & Support</a></li>
+                            <li><a href="">Partner with us</a></li>
+                            <li><a href="">Ride with us</a></li>
+                          </ul>
+                        </div>
+                        <div class="col-4">
+                          <ul class="my-3">
+                            <li><b class="text-secondary">LEGAL</b></li><br>
+                            <li><a href="">Terms & Conditions</a></li>
+                            <li><a href="">Refund & Cancellation</a></li>
+                            <li><a href="">Privacy Policy</a></li>
+                            <li><a href="">Cookie Policy</a></li>
+                            <li><a href="">Offer Terms</a></li>
+                            <li><a href="">Phishing & Fraud</a></li>
+                            <li><a href="">Legal
+                              Corporate - Swiggy Money Codes Terms and Conditions</a></li>
+                            <li><a href="">Legal
+                              Corporate - Swiggy Discount Voucher Terms and Conditions</a></li>
+                          </ul>
+                        </div>
+                        <div class="col-3">
+                          <div class="row">
+                            <a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Download_on_the_App_Store_Badge.svg/640px-Download_on_the_App_Store_Badge.svg.png" alt="" srcset="" class="w-100 py-5 px-5"></a>
+                            <a href=""><img src="https://mylapels.com/wp-content/uploads/2019/02/global-playstore.png" alt="" srcset="" class="w-100 px-5"></a>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                
+                  <div class="container-fluid" id="five">
+                    <div class="row py-3">
+                      <h3><b class="text-secondary px-4">WE DELIVERY TO</b></h3>
+                      <div class="col-3 py-5">
+                          <ul>
+                            <li><a href="">abohar</a></li>     
+                            <li><a href="">adilabad</a></li>
+                            <li><a href="">adoni</a></li>
+                            <li><a href="">agartala</a></li>
+                            <li><a href="">agra</a></li>
+                            <li><a href="">ahmedabad</a></li>
+                            <li><a href="">ahmednagar</a></li>
+                            <li><a href="">aizawl</a></li>
+                            <li><a href="">ajmer</a></li>
+                            <li><a href="">amritsar</a></li>
+                            <li><a href="">Hyderabad</a></li>
+                            <li><a href="">Bangalore</a></li>
+                            <li><a href="">Mahabubnagar</a></li>
+                            <li><a href="">Chennai</a></li>
+                            <li><a href="">Kochi</a></li>
+                            <li><a href="">Pune</a></li>
+                            <li><a href="">Kolkata</a></li>
+                            <li><a href="">Kollam</a></li>
+                            <li><a href="">Koppal</a></li>
+                            <li><a href="">Dharmashal</a></li>
+                          </ul>
+                      </div>
+                      <div class="col-3 py-5">
+                        <ul>
+                          <li><a href="">darbhanga</a></li>
+                          <li><a href="">darjeeling</a></li>
+                          <li><a href="">deoghar</a></li>
+                          <li><a href="">dewas</a></li>
+                          <li><a href="">delhi</a></li>
+                          <li><a href="">dehri</a></li>
+                          <li><a href="">dehradun</a></li>
+                          <li><a href="">davanagere</a></li>
+                          <li><a href="">dausa</a></li>
+                          <li><a href="">daund</a></li>
+                          <li><a href="">khopoli</a></li>
+                          <li><a href="">kolhapur</a></li>
+                          <li><a href="">kolar</a></li>
+                          <li><a href="">kohima</a></li>
+                          <li><a href="">kodaikanal</a></li>
+                          <li><a href="">kochi</a></li>
+                          <li><a href="">kishanganj</a></li>
+                          <li><a href="">kishangarh</a></li>
+                          <li><a href="">kolkata</a></li>
+                          <li><a href="">kollam</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-3 py-5">
+                        <ul>
+                          <li><a href="">khopoli</a></li>
+                          <li><a href="">kolhapur</a></li>
+                          <li><a href="">kolar</a></li>
+                          <li><a href="">kohima</a></li>
+                          <li><a href="">kodaikanal</a></li>
+                          <li><a href="">kochi</a></li>
+                          <li><a href="">kishanganj</a></li>
+                          <li><a href="">kishangarh</a></li>
+                          <li><a href="">kolkata</a></li>
+                          <li><a href="">kollam</a></li>
+                          <li><a href="">darbhanga</a></li>
+                          <li><a href="">darjeeling</a></li>
+                          <li><a href="">deoghar</a></li>
+                          <li><a href="">dewas</a></li>
+                          <li><a href="">delhi</a></li>
+                          <li><a href="">dehri</a></li>
+                          <li><a href="">dehradun</a></li>
+                          <li><a href="">davanagere</a></li>
+                          <li><a href="">dausa</a></li>
+                          <li><a href="">daund</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-3 py-5">
+                        <ul>
+                          <li><a href="">Hyderabad</a></li>
+                          <li><a href="">Bangalore</a></li>
+                          <li><a href="">Mahabubnagar</a></li>
+                          <li><a href="">Chennai</a></li>
+                          <li><a href="">Kochi</a></li>
+                          <li><a href="">Pune</a></li>
+                          <li><a href="">Kolkata</a></li>
+                          <li><a href="">Kollam</a></li>
+                          <li><a href="">Koppal</a></li>
+                          <li><a href="">Dharmashal</a></li>
+                          <li><a href="">abohar</a></li>     
+                            <li><a href="">adilabad</a></li>
+                            <li><a href="">adoni</a></li>
+                            <li><a href="">agartala</a></li>
+                            <li><a href="">agra</a></li>
+                            <li><a href="">ahmedabad</a></li>
+                            <li><a href="">ahmednagar</a></li>
+                            <li><a href="">aizawl</a></li>
+                            <li><a href="">ajmer</a></li>
+                            <li><a href="">amritsar</a></li>
+                            <li><a href="">Hyderabad</a></li>
+                        </ul>
+                      </div>
+                      <h1 id="line"></h1><br>
+                    </div>
+                  </div>
+                  <div class="container-fluid py-3" id="social">
+                    <div class="row">
+                      <div class="col-2">
+                        <img class="" alt="" src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_284/Logo_f5xzza" width="142">
+                      </div>
+                      <div class="col-2 offset-3 py-2">
+                        <div class="text-light">© 2022 Swiggy</div>
+                      </div>
+                      <div class="col-1 offset-1"><a href="" class="p-3"><i class="bi bi-facebook" id="media"></i></a></div>
+                      <div class="col-1"><a href="" class="p-3"><i class="bi bi-instagram" id="media"></i></a></div>
+                      <div class="col-1"><a href="" class="p-3"><i class="bi bi-twitter" id="media"></i></a></div>
+                      <div class="col-1"><a href=""><img src="https://i.pinimg.com/originals/d3/d1/75/d3d175e560ae133f1ed5cd4ec173751a.png" alt="" srcset="" class="w-100" height="50x" width="50px"></a></div>
+                    </div>
+                  </div>
+
+                  <script src="cart.js"></script>
+</body>
+</html>

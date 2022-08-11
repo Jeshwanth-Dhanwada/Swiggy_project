@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Document</title>
+</head>
+<body>
+          <script>
+
+                    //filter-------------------
+
+                    number = [1,10,12,20,111];
+                    const filtered = number.filter(function(value){
+                              return value>=0;
+                    })
+
+                    console.log(filtered)
+
+                    //length-------------------
+
+                    let length = number.length;
+                    console.log(length)
+
+
+                    //slice-------------------
+
+                    let str = "Apple, Banana, Kiwi"
+                    let part = str.slice(0,7);
+                    console.log(part)
+
+                    //substring----------------
+                    subs = str.substring(2,13)
+                    console.log(subs)
+
+                    //substr------------------
+
+                    subst = str.substr(2,13)
+                    console.log(subst)
+
+                    //text replace--------------
+
+                    text = "Please visit microsoft,microsoft"
+                    newtext= text.replace("microsoft","Google")
+                    console.log(text)
+                    console.log(newtext)
+                    
+                    // document.getElementById('new').innerHTML;
+                    // document.getElementById('new').innerHtml=replace("microsoft","jeshwanth")
+
+                    //charAt--------------------------
+
+                    t = text.charCodeAt(11)
+                    console.log(t)
+          </script>
+
+          <p id="new">Please visit microsoft</p>
+</body>
+</html>
